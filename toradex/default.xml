@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org" />
+  <remote name="githf" fetch="https://github.com/Freescale"/>
+  <remote name="tdx" fetch="https://git.toradex.com" />
+  <remote name="mst" fetch="https://github.com/ahmadmoutraji"/>
+
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="cd50c3481e32afff995a143c3459cfa5ae25abd5" upstream="2.8"/>
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="b5874ea07d69919d9b40d59f2c2f0bbd24bc3259" upstream="scarthgap"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="961c2399d06fbdb04ee27d06079e186d2c4a14ad" upstream="scarthgap"/>
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="04f18f976b3809e195433b6b31a6121014bdc37c" upstream="scarthgap"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b13f1705d723650de61277670c8a76aadea4cfdd" upstream="scarthgap"/>
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="ce10c065119c2d4e359235c77aae7e0d843533ef" upstream="scarthgap"/>
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="2642b34e4c66ec1419e7f3a7a77a20b09e49e26b" upstream="scarthgap"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="ce51eb5486e87a34f04f0367351e3217855b17ba" upstream="scarthgap"/>
+
+  <project name="meta-mst-p41-bsp" path="layers/meta-mst-p41-bsp" remote="mst" revision="71a5877f3df2acb5ef7e3479383851b6e8bfd428" upstream="scarthgap" >
+        <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
+  </project>
+</manifest>
