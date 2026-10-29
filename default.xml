@@ -15,7 +15,8 @@
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="2642b34e4c66ec1419e7f3a7a77a20b09e49e26b" upstream="scarthgap"/>
   <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="ce51eb5486e87a34f04f0367351e3217855b17ba" upstream="scarthgap"/>
 
-  <project name="meta-mst-p41-bsp" path="layers/meta-mst-p41-bsp" remote="mst" revision="71a5877f3df2acb5ef7e3479383851b6e8bfd428" upstream="scarthgap" >
+  <project name="meta-mst-distro" path="layers/meta-mst-distro" remote="mst" revision="323dd5a504a19ed378926c8ed35574a5e7634d63" upstream="scarthgap"/>
+  <project name="meta-mst-p41-bsp" path="layers/meta-mst-p41-bsp" remote="mst" revision="9eb6818ecf10b1592a8cdee007a23ee8441dc265" upstream="scarthgap" >
         <linkfile dest="init-build-env.sh" src="scripts/init-build-env.sh"/>
   </project>
 </manifest>
